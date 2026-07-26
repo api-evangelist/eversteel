@@ -1,0 +1,15 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: eversteel.co.jp
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 15 14:49:38 2026 GMT
+  hsts: false
+domains:
+- domain: eversteel.co.jp
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false

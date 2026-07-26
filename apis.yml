@@ -1,8 +1,24 @@
 aid: eversteel
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/eversteel.png
 name: EVERSTEEL
-description: 'EVERSTEEL is a company surfaced as a portfolio company of dcm-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'EVERSTEEL is a University of Tokyo-originated startup building AI image-recognition systems
+  that automate the inspection and grading of steel (iron) scrap for steelmakers. Its flagship product,
+  Tetsu-Navi Inspection AI (鉄ナビ検収AI), uses high-resolution cameras and computer-vision models to grade
+  incoming scrap, detect impurities and hazardous materials, and standardize what was previously a manual,
+  expert-dependent process — advancing steel recycling and reducing CO2 emissions from steel production.
+  The company works with major Japanese steel producers including JFE Steel and Kyoei Steel, and is backed
+  by DCM Ventures, Mitsui & Co., Coreline, and the University of Tokyo.'
 url: https://raw.githubusercontent.com/api-evangelist/eversteel/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Frontier Tech
+- Artificial Intelligence
+- Computer Vision
+- Steel
+- Recycling
+- Manufacturing
+- Sustainability
+- Japan
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/eversteel-domain-security.yml
 - type: Website
   url: https://eversteel.co.jp/
+- type: Blog
+  url: https://eversteel.co.jp/news
+- type: PrivacyPolicy
+  url: https://eversteel.co.jp/privacy_policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
